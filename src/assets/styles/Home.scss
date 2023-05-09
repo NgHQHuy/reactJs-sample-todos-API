@@ -1,0 +1,159 @@
+.main-content{
+    color: lemonchiffon;
+    width: 70%;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 0 5px;
+    &::-webkit-scrollbar:vertical{
+        width: 55px;
+    }
+    &::-webkit-scrollbar-thumb:vertical {
+        width: 50px;
+        color: red;
+    }
+    .line{
+        margin: 2vh 0;
+        width: 100%;
+        height: 2px;
+        background-color: lemonchiffon;
+        border-radius: 7px;
+    }
+    .title-element{
+        font-weight: bold;
+        font-size: 17px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .user-selection{
+        position: relative;
+        .user-selection-search{
+            margin-top: 5px;
+            input{
+                height: 30px;
+                width: 200px;
+                padding: 3px;
+                border-radius: 10px;
+                border: none;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .user-selection-content{
+            display: none;
+            padding: 3px;
+            background-color: white;
+            width: 200px;
+            border-radius: 7px;
+            position: absolute;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .user-selection-list{
+                height: fit-content;
+                max-height: 100px;  
+                color: black;  
+                display: block;
+                overflow-y: auto;
+    
+                &::-webkit-scrollbar{
+                    width: 2px;
+                    border-radius: 5px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    height: 20px;
+                    background-color: #9f9f9f;
+                    border-radius: 5px;
+                }
+    
+                .user-selection-item{
+                    padding: 3px;
+
+                    &:hover{
+                        background-color: whitesmoke;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }  
+        .user-selection-content-active{
+            display: block;
+        }
+    }
+    .user-tasks{
+        .user-tasks-content{
+            width: 100%;
+            padding: 1px 15px 1px 5px;
+            background-color: ghostwhite;
+            border-radius: 10px;
+
+            .user-tasks-list{
+                width: 100%;
+                margin: 1vh 0;
+                padding: 0 7px;
+                height: fit-content;
+                min-height: 200px;
+                max-height: 500px;
+                display: block;
+                overflow: auto;
+                &::-webkit-scrollbar{
+                    width: 5px;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    height: 20px;
+                    background-color: #9f9f9f;
+                    border-radius: 5px;
+                }
+
+                .no-data{
+                    color: grey;
+                    text-align: center;
+                    font-style: italic;
+                    font-size: 15px;
+                }
+                .user-tasks-list-item{
+                    border-top: 1px solid grey;
+                    color: black;
+                    padding: 3px 0;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+    
+                    &:first-child{
+                        border: none;
+                    }
+                    .task-status{
+                        color: orange;
+                        margin-right: 3px;
+                    }
+                    .task-status-checked{
+                        color: green;
+                        margin-right: 3px;
+                    }
+                    span{
+                        width: calc(100% - 102px);
+                        display: block;
+                        padding: 5px;
+                        overflow-wrap: break-word;
+                    }
+                    .btn-mark-done{
+                        font-size: 13px;
+                        border: 1px solid grey;
+                        border-radius: 7px;
+                        position: absolute;
+                        right: 0;
+                        background: top / 0% 100% no-repeat linear-gradient(lavender,lavender);
+                        transition: background-size 400ms;
+                        &:hover{
+                            background: top / 100% 100% no-repeat linear-gradient(lavender,lavender);
+                            color: #00A36C;
+                            outline: 1px groove #00A36C;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,48 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: #282c34;
+  display: block;
+  overflow: auto;
+  
+  .App-header {
+    height: 50px;
+    width: clamp(280px,50%,60%);
+    margin: auto;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .top-nav{
+      position: relative;
+      text-align: center;
+      font-family: "BrunoAceSC";
+      font-weight: bold;
+      letter-spacing: 1px;
+      top: 15px;
+
+      span{
+        display: inline-block;
+        animation: letterAnim 1.5s infinite;
+        animation-delay: calc(.2s*var(--i));
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "BrunoAceSC";
+  src: url(./assets/fonts/BrunoAceSC-Regular.ttf);
+}
+
+@keyframes letterAnim {
+  0%{transform: translateY(0);}
+  40%{transform: translateY(0);} 
+  100%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(-5px);
+  }
+}
+
+
