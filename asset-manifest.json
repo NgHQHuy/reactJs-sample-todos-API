@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reactJs-sample-todos-API/static/css/main.76fe26c0.css",
+    "main.js": "/reactJs-sample-todos-API/static/js/main.fbde5402.js",
+    "static/js/787.766ceb35.chunk.js": "/reactJs-sample-todos-API/static/js/787.766ceb35.chunk.js",
+    "static/media/BrunoAceSC-Regular.ttf": "/reactJs-sample-todos-API/static/media/BrunoAceSC-Regular.2ad5677d3db64db01da0.ttf",
+    "index.html": "/reactJs-sample-todos-API/index.html",
+    "main.76fe26c0.css.map": "/reactJs-sample-todos-API/static/css/main.76fe26c0.css.map",
+    "main.fbde5402.js.map": "/reactJs-sample-todos-API/static/js/main.fbde5402.js.map",
+    "787.766ceb35.chunk.js.map": "/reactJs-sample-todos-API/static/js/787.766ceb35.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76fe26c0.css",
+    "static/js/main.fbde5402.js"
+  ]
+}
